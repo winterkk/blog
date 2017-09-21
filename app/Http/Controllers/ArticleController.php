@@ -16,5 +16,6 @@ class ArticleController extends Controller
     public function show(Request $request)
     {
     	$id = $request->id;
+    	return $id;
     }
 }
