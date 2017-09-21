@@ -15,3 +15,8 @@ Route::get('/','IndexController@Index');
 
 Route::get('article','ArticleController@index');
 Route::get('article/{id}','ArticleController@show');
+
+// 控制器在 "App\Http\Controllers\Admin" 命名空间下
+Route::group(['namespace'=>'Admin'],function(){
+	Route::get('Admin/article','ArticleController@index');
+});
