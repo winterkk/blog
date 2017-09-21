@@ -23,7 +23,7 @@ class CreateArticleTable extends Migration
 			$table->string('tag',100)->default('')->comment('标签');
 			$table->text('content')->notNull()->comment('文章');
 			$table->boolean('status')->default(0)->comment('0正常,1删除');
-			$table->string('from_url')->comment('来源地址');
+			$table->string('from_url')->default('')->comment('来源地址');
 			$table->string('author')->notNull()->comment('作者');
 			$table->integer('user_id')->default(0)->comment('作者id');
 			$table->integer('weight')->default(0)->comment('权重,倒序');

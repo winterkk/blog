@@ -13,3 +13,5 @@
 
 Route::get('/','IndexController@Index');
 
+Route::get('article','ArticleController@index');
+Route::get('article/{id}','ArticleController@show');
